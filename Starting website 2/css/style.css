@@ -1047,10 +1047,11 @@ h4 {
     padding: 0px;
 }
 .ul-footer> li> a {
-    color: white;
+    color: #333333;
 }
 .ul-footer>li {
-    color: white;
+    color: #333333;
 }
+.color-p {color: #333333}
 .header { margin: 0px}
 .container {margin: 0px; width: 100%}
