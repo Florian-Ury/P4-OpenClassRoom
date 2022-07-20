@@ -1055,3 +1055,6 @@ h4 {
 .color-p {color: #333333}
 .header { margin: 0px}
 .container {margin: 0px; width: 100%}
+.img-logo-size {
+    width: 100px;
+}
