@@ -1059,3 +1059,16 @@ h4 {
 .color-size{color: white;font-size: 20px}
 .title-services{color: #5e5e5e; font-size: 20px}
 .citation-service{color: #5e5e5e;font-size: 20px}
+
+@media screen and (max-width: 768px) {
+    .title-services {
+        font-size: 16px;
+    }
+    .citation-service {
+        font-size: 11px;
+    }
+
+}
+@media screen and (min-width: 992px) {
+
+}
