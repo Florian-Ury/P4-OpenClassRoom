@@ -292,7 +292,6 @@ a:hover {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
     margin-bottom: 0;
     z-index: 1;
 }
@@ -1067,8 +1066,21 @@ h4 {
     .citation-service {
         font-size: 11px;
     }
+    .social {
+        display: flex;
+        justify-content: space-around;
+    }
 
 }
-@media screen and (min-width: 992px) {
-
+@media screen and (max-width: 992px) {
+    .title-services {
+        font-size: 19px;
+    }
+    .citation-service {
+        font-size: 16px;
+    }
+    .social {
+        display: flex;
+        justify-content: space-around;
+    }
 }
