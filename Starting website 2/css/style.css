@@ -824,8 +824,27 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("../img/image-de-presentation.bmp");
+    background-image: url("../img/image-de-presentation.jpeg");
 }
+
+@media screen and (max-width: 992px) {
+    .bg-banniere {
+        background-image: url("../img/agence-la-panthere-redim992px.jpeg");
+    }
+    .bg-presentation {
+        background-image: url("../img/image-de-presentation-redim992px.jpeg");
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bg-banniere {
+        background-image: url("../img/agence-la-panthere-redim768px.jpeg");
+    }
+    .bg-presentation {
+        background-image: url("../img/image-de-presentation-redim768px.webp");
+    }
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
