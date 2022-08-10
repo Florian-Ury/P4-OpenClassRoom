@@ -680,7 +680,7 @@ label,
 }
 
 p {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .tight-width-whitespace {
@@ -1089,6 +1089,9 @@ h4 {
         display: flex;
         justify-content: space-around;
     }
+    .img-responsive {
+        display: initial;
+    }
 
 }
 @media screen and (max-width: 992px) {
@@ -1101,5 +1104,8 @@ h4 {
     .social {
         display: flex;
         justify-content: space-around;
+    }
+    .img-responsive {
+        display: initial;
     }
 }
