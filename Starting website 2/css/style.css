@@ -557,6 +557,18 @@ a[data-lightbox]:hover::before {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
+@media screen and (max-width: 992px) {
+    a[data-lightbox]:hover::before {
+        margin-left: 0px;
+        left: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    a[data-lightbox]:hover::before {
+        margin-left: 0px;
+        left: 45%;
+    }
+}
 
 a[data-lightbox]:hover img {
     opacity: 0.6;
