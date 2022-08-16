@@ -3,8 +3,6 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 ul, ol, li {
     list-style: none;
@@ -34,9 +32,9 @@ a:hover {
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
     background-size: cover;
     position: relative;
 }
@@ -68,9 +66,9 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
+    /*-webkit-background-size: auto;*/
+    /*-moz-background-size: auto;*/
+    /*-o-background-size: auto;*/
     background-size: auto;
 }
 
@@ -105,6 +103,7 @@ a:hover {
 }
 .img-navbar {
     height: 40px;
+    width: 220px;
 }
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
@@ -372,7 +371,7 @@ a:hover {
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
+        /*-webkit-transform: translateY(-50%);*/
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -542,7 +541,7 @@ a[data-lightbox] {
 
 a[data-lightbox]:hover::before {
     content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -555,7 +554,7 @@ a[data-lightbox]:hover::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    /*-webkit-transform: translateY(-50%);*/
 }
 @media screen and (max-width: 992px) {
     a[data-lightbox]:hover::before {
@@ -572,7 +571,7 @@ a[data-lightbox]:hover::before {
 
 a[data-lightbox]:hover img {
     opacity: 0.6;
-    -webkit-animation-fill-mode: none;
+    /*-webkit-animation-fill-mode: none;*/
     animation-fill-mode: none;
 }
 
@@ -664,7 +663,7 @@ h6,
 p,
 label,
 .btn{
-    font-family: "helvetica";
+    font-family: "helvetica", sans-serif;
     font-weight: 400;
     color: #575757;
 }
@@ -702,7 +701,7 @@ p {
 
 .h1 {
     font-size: 20px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .cta-hero {
@@ -756,6 +755,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 270px;
+    height: 270px;
 }
 
 .portfolio-row {
@@ -790,7 +791,10 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C;
+    color: #000000;
+}
+.background-title {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-atomic-tangerine {
@@ -831,8 +835,9 @@ h4 {
     background-image: url("../img/lines-h2-bg.png");
 }
 
+
 .bg-banniere {
-    background-image: url("../img/agence-la-panthere.jpg");
+    background-image: url("../img/agence-la-panthere.svg");
 }
 
 .bg-presentation {
@@ -841,7 +846,7 @@ h4 {
 
 @media screen and (max-width: 992px) {
     .bg-banniere {
-        background-image: url("../img/agence-la-panthere-redim992px.jpeg");
+        background-image: url("../img/agence-la-panthere-redim992px.svg");
     }
     .bg-presentation {
         background-image: url("../img/image-de-presentation-redim992px.jpeg");
@@ -850,7 +855,7 @@ h4 {
 
 @media screen and (max-width: 768px) {
     .bg-banniere {
-        background-image: url("../img/agence-la-panthere-redim768px.jpeg");
+        background-image: url("../img/agence-la-panthere-redim768px.svg");
     }
     .bg-presentation {
         background-image: url("../img/image-de-presentation-redim768px.webp");
@@ -887,7 +892,7 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -947,8 +952,8 @@ h4 {
     .site-navigation {
         position: inherit;
         transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
+        /*-webkit-transform: none;*/
+        /*-ms-transform: none;*/
     }
     .nav > li {
         margin-top: 0;
@@ -985,12 +990,12 @@ h4 {
     .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
-        -webkit-box-shadow: none;
+        /*-webkit-box-shadow: none;*/
         box-shadow: none;
     }
     .navbar-brand img {
         max-height: 40px;
-        width: auto;
+        width: 220px;
     }
     .nav-invert .navbar-header {
         float: none;
@@ -1080,15 +1085,35 @@ h4 {
 .ul-footer>li {
     color: #333333;
 }
-.color-p {color: #333333}
-.header { margin: 0px}
-.container {margin: 0px; width: 100%}
+.color-p {
+    color: #333333
+}
+.container {
+    margin: 0px;
+    width: 100%
+}
 .img-logo-size {
     width: 100px;
 }
-.color-size{color: white;font-size: 20px}
-.title-services{color: #5e5e5e; font-size: 20px}
-.citation-service{color: #5e5e5e;font-size: 20px}
+.color-size{
+    color: #000000;
+    font-size: 20px
+}
+.title-services{
+    color: #5e5e5e;
+    font-size: 20px
+}
+.citation-service{
+    color: #5e5e5e;
+    font-size: 20px
+}
+.center-block{
+    width: 100px;
+    height: 100px
+}
+.navbar-header {
+    width: 100%;
+}
 
 @media screen and (max-width: 768px) {
     .title-services {

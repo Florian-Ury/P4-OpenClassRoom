@@ -6,10 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/et-line.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/et-line.css" media="all">
 
 
 
@@ -25,7 +26,7 @@
 <!-- Principal conteneur -->
 
 	<!-- bloc-0 -->
-	<header class="header bloc l-bloc " id="bloc-0">
+	<header class="bloc l-bloc " id="bloc-0">
 		<div class="container bloc-sm">
 			<nav class="navbar row">
 				<div class="navbar-header">
@@ -33,16 +34,16 @@
 					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 						<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
-				</div>
-				<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-					<ul class="site-navigation nav navbar-nav">
-						<li>
-							<a href="index.html">Accueil</a>
-						</li>
-						<li>
-							<a href="page2.html">Contactez la panthère</a>
-						</li>
-					</ul>
+					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+						<ul class="site-navigation nav navbar-nav">
+							<li>
+								<a href="index.html">Accueil</a>
+							</li>
+							<li>
+								<a href="page2.html">Contactez la panthère</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		</div>
@@ -51,12 +52,12 @@
 
 	<main class="page-container">
 		<!-- bloc-1-presentation -->
-		<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
-			<div class="container bloc-lg">
+		<section class="bloc bg-banniere d-bloc bg-t-edge  b-parallax" id="bloc-1-hero">
+			<div class="container bloc-lg background-title">
 				<div class="row tight-width-whitespace">
 					<div class="col-sm-12">
-						<img src="img/logo.png" class="center-block img-logo-size" alt="Logo de la panthère agence web design" />
-						<h1 class="text-center hero-bloc-text tc-white ">
+						<img src="img/logo-resize.svg" class="center-block" alt="Logo de la panthère agence web design" />
+						<h1 class="text-center hero-bloc-text tc-white">
 							Agence La Panthère
 						</h1>
 						<div class="text-center">
@@ -199,7 +200,7 @@
 		<!-- bloc-4-portfolio END -->
 
 		<!-- bloc-5-cta -->
-		<aside class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+		<aside class="bloc bg-banniere d-bloc" id="bloc-5-cta">
 			<div class="container bloc-lg">
 				<div class="row">
 					<h3 class="mg-md text-center color-size">
@@ -260,9 +261,9 @@
 	</footer>
 	<!-- Footer - bloc-8 END -->
 
-	<script src="js/jquery-2.1.0.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/blocs.js"></script>
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
 	<script src="js/jquery.touchSwipe.js" defer></script>
 
 </body>
